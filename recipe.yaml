@@ -247,13 +247,13 @@ tasks:
 
   ## GCPhone stuff
   - action: download_file
-    url: https://github.com/Re-Ignited-Development/Re-Ignited-Phone/releases/download/V1.5/resources-1.2.zip
+    url: https://github.com/nightowlsrp/Re-Ignited-Phone/releases/download/1.0/gcphone.zip
     path: ./tmp/gcphone.zip
   - action: unzip
     src: ./tmp/gcphone.zip
     dest: ./tmp
   - action: move_path
-    src: ./tmp/resources-1.2/gcphone
+    src: ./tmp/gcphone
     dest: ./resources/[essential]/gcphone
   
   - action: download_github
