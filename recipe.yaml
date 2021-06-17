@@ -25,7 +25,7 @@ tasks:
   
   - action: move_path
     src: ./tmp/linden_esx/loadingscreen
-    dest: ./resources/loadingscreen
+    dest: ./resources/[system]/loadingscreen
 
   - action: connect_database
   - action: query_database
@@ -249,7 +249,7 @@ tasks:
     dest: ./tmp
   - action: move_path
     src: ./tmp/resources-1.2/gcphone
-    dest: ./resources/gcphone
+    dest: ./resources/[essential]/gcphone
   
   - action: download_github
     src: https://github.com/citizenfx/screenshot-basic
@@ -273,7 +273,7 @@ tasks:
   - action: download_github
     src: https://github.com/thelindat/linden_inventory
     ref: ebb22797b0b2ae299f73886e6c4a5814b10af8d7
-    dest: ./resources/[elements]/linden_inventory
+    dest: ./resources/[essential]/linden_inventory
 
 ## Final touches
   - action: remove_path
