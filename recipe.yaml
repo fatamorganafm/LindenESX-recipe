@@ -49,15 +49,10 @@ tasks:
     ref: c5fa317a65acfe2eef453257e19e3b4fde137089
     dest: ./resources/[essential]/mysql-async
     
-  - action: download_file
-    url: https://github.com/GHMatti/ghmattimysql/releases/download/1.3.2/ghmattimysql.zip
-    path: ./tmp/ghmattimysql.zip
-  - action: unzip
-    src: ./tmp/ghmattimysql.zip
-    dest: ./tmp
-  - action: move_path
-    src: ./tmp/ghmattimysql
-    dest: ./resources/[essential]/gcphone
+  - action: download_github
+    src: https://github.com/nightowlsrp/ghmattimysql
+    ref: 0ee7faedcd95583d7d9e9728489627323ef7a3f5
+    dest: ./resources/[essential]/mysql-async
 
   - action: download_github
     src: https://github.com/esx-framework/cron
