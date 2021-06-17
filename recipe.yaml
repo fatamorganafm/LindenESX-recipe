@@ -296,5 +296,8 @@ tasks:
   file: ./resources/[esx]/esx_status/config.cfg
   search: 'Config.Display        = true'
   replace: 'Config.Display        = false'
-  search: 'Config.EnableDefaultInventory   = true'
-  replace: 'Config.EnableDefaultInventory   = false'
+
+- action: replace_string
+  file: ./resources/[esx]/esx_society/config.cfg
+  search: 'Config.EnableESXIdentity = false'
+  replace: 'Config.EnableESXIdentity = true'
