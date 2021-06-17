@@ -251,6 +251,11 @@ tasks:
     src: ./tmp/resources-1.6/gcphone
     dest: ./resources/[essential]/gcphone
   
+  - action: download_github
+    src: https://github.com/citizenfx/screenshot-basic
+    ref: 0712d9ed5a0c6899db9bab37cd94f03310bb416c
+    dest: ./resources/[essential]/screenshot-basic
+
 
   ## Cosmo HUD
   - action: download_github
