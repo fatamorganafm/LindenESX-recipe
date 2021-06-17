@@ -36,7 +36,7 @@ tasks:
   # Download basic resources and ESX dependencies
   - action: download_github
     src: https://github.com/Blumlaut/EasyAdmin
-    ref: 50f8d23c6c7c20a420548728d962b741b2abc653
+    ref: 2effaa3f417318b40f252221c200f4727e7279ae
     dest: ./resources/[admin]/EasyAdmin
 
   - action: download_github
@@ -84,6 +84,11 @@ tasks:
     src: https://github.com/thelindat/es_extended
     ref: d61901e69bf56e014540cc97e84bdf2abf04a491
     dest: ./resources/[esx]/es_extended
+    
+  - action: replace_string
+    file: ./resources/[esx]/es_extended/config.cfg
+    search: 'Config.EnableDefaultInventory   = true'
+    replace: 'Config.EnableDefaultInventory   = false'
 
   - action: download_github
     src: https://github.com/esx-framework/esx_menu_default
@@ -124,6 +129,11 @@ tasks:
     src: https://github.com/thelindat/esx_status
     ref: 25383caa0c0bbe7de823f17f419fbc9c98017044
     dest: ./resources/[esx]/esx_status
+    
+  - action: replace_string
+    file: ./resources/[esx]/esx_status/config.cfg
+    search: 'Config.Display        = true'
+    replace: 'Config.Display        = false'
 
   - action: download_github
     src: https://github.com/thelindat/esx_basicneeds
@@ -149,6 +159,11 @@ tasks:
     src: https://github.com/thelindat/esx_society
     ref: 7c9818dbdc54a68412ae259d04f3524a08d9f123
     dest: ./resources/[esx]/esx_society
+    
+  - action: replace_string
+    file: ./resources/[esx]/esx_society/config.cfg
+    search: 'Config.EnableESXIdentity = false'
+    replace: 'Config.EnableESXIdentity = true'
 
   - action: download_github
     src: https://github.com/esx-framework/esx_license
@@ -244,6 +259,16 @@ tasks:
     src: https://github.com/OfficialNoms/bt-target
     ref: a286b85e63eec4e97c3a1a3d75f43656708f341c
     dest: ./resources/[elements]/bt-target
+    
+  - action: download_github
+    src: https://github.com/thelindat/LegacyFuel
+    ref: 2c29a1ea8591c3b15aa433c6dd943f748ee8789e
+    dest: ./resources/[essential]/LegacyFuel
+    
+  - action: download_github
+    src: https://github.com/nightowlsrp/default_spawnpoint
+    ref: 482bb76c81eec0c71e1caa93947bac764e783d4b
+    dest: ./resources/[essential]/default_spawnpoint
 
   ## GCPhone stuff
   - action: download_file
