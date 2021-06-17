@@ -242,13 +242,13 @@ tasks:
 
   ## GCPhone stuff
   - action: download_file
-    url: https://github.com/thelindat/Re-Ignited-Phone/archive/refs/tags/v1.6.0.zip
-    path: ./tmp/Re-Ignited-Phone-1.6.0.zip
+    url: https://github.com/Re-Ignited-Development/Re-Ignited-Phone/releases/download/V1.5/resources-1.2.zip
+    path: ./tmp/gcphone.zip
   - action: unzip
-    src: ./tmp/Re-Ignited-Phone-1.6.0.zip
+    src: ./tmp/gcphone.zip
     dest: ./tmp
   - action: move_path
-    src: ./tmp/resources-1.6/gcphone
+    src: ./tmp/resources-1.2/gcphone
     dest: ./resources/[essential]/gcphone
   
   - action: download_github
