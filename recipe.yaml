@@ -1,7 +1,7 @@
 $engine: 3
 $onesync: on
 name: LindenESX
-version: 1.0.1
+version: 1.0.2
 author: Judd
 description: An ESX Legacy base that can be easily extended. 
 
@@ -280,24 +280,24 @@ tasks:
     ref: ebb22797b0b2ae299f73886e6c4a5814b10af8d7
     dest: ./resources/[essential]/linden_inventory
 
-## Final touches
+  ## Final touches
   - action: remove_path
     path: ./tmp
     
-# Replace all variables
-- action: replace_string
-  file: ./resources/[esx]/es_extended/config.cfg
-  search: 'Config.Multichar = false'
-  replace: 'Config.Multichar = true'
-  search: 'Config.EnableDefaultInventory   = true'
-  replace: 'Config.EnableDefaultInventory   = false'
+  # Replace all variables
+  - action: replace_string
+    file: ./resources/[esx]/es_extended/config.cfg
+    search: 'Config.Multichar = false'
+    replace: 'Config.Multichar = true'
+    search: 'Config.EnableDefaultInventory   = true'
+    replace: 'Config.EnableDefaultInventory   = false'
   
-- action: replace_string
-  file: ./resources/[esx]/esx_status/config.cfg
-  search: 'Config.Display        = true'
-  replace: 'Config.Display        = false'
+  - action: replace_string
+    file: ./resources/[esx]/esx_status/config.cfg
+    search: 'Config.Display        = true'
+    replace: 'Config.Display        = false'
 
-- action: replace_string
-  file: ./resources/[esx]/esx_society/config.cfg
-  search: 'Config.EnableESXIdentity = false'
-  replace: 'Config.EnableESXIdentity = true'
+  - action: replace_string
+    file: ./resources/[esx]/esx_society/config.cfg
+    search: 'Config.EnableESXIdentity = false'
+    replace: 'Config.EnableESXIdentity = true'
