@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `addon_account_data` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `account_name` varchar(100) DEFAULT NULL,
   `money` int(11) NOT NULL,
-  `owner` varchar(40) DEFAULT NULL,
+  `owner` varchar(60) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `index_addon_account_data_account_name_owner` (`account_name`,`owner`),
   KEY `index_addon_account_data_account_name` (`account_name`)
@@ -76,7 +76,7 @@ CREATE TABLE IF NOT EXISTS `addon_inventory_items` (
   `inventory_name` varchar(100) NOT NULL,
   `name` varchar(100) NOT NULL,
   `count` int(11) NOT NULL,
-  `owner` varchar(40) DEFAULT NULL,
+  `owner` varchar(60) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `index_addon_inventory_items_inventory_name_name` (`inventory_name`,`name`),
   KEY `index_addon_inventory_items_inventory_name_name_owner` (`inventory_name`,`name`,`owner`),
@@ -90,7 +90,7 @@ CREATE TABLE IF NOT EXISTS `addon_inventory_items` (
 -- Dumping structure for table dep_keep.billing
 CREATE TABLE IF NOT EXISTS `billing` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `identifier` varchar(40) NOT NULL,
+  `identifier` varchar(60) NOT NULL,
   `sender` varchar(40) NOT NULL,
   `target_type` varchar(50) NOT NULL,
   `target` varchar(40) NOT NULL,
@@ -136,7 +136,7 @@ INSERT INTO `datastore` (`name`, `label`, `shared`) VALUES
 CREATE TABLE IF NOT EXISTS `datastore_data` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(60) NOT NULL,
-  `owner` varchar(40) DEFAULT NULL,
+  `owner` varchar(60) DEFAULT NULL,
   `data` longtext DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `index_datastore_data_name_owner` (`name`,`owner`),
@@ -288,7 +288,7 @@ INSERT INTO `licenses` (`type`, `label`) VALUES
 
 -- Dumping structure for table dep_keep.owned_vehicles
 CREATE TABLE IF NOT EXISTS `owned_vehicles` (
-  `owner` varchar(40) NOT NULL,
+  `owner` varchar(60) NOT NULL,
   `plate` varchar(12) NOT NULL,
   `vehicle` longtext DEFAULT NULL,
   `type` varchar(20) NOT NULL DEFAULT 'car',
@@ -308,7 +308,7 @@ CREATE TABLE IF NOT EXISTS `rented_vehicles` (
   `player_name` varchar(255) NOT NULL,
   `base_price` int(11) NOT NULL,
   `rent_price` int(11) NOT NULL,
-  `owner` varchar(22) NOT NULL,
+  `owner` varchar(60) NOT NULL,
   PRIMARY KEY (`plate`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -331,7 +331,7 @@ CREATE TABLE IF NOT EXISTS `society_moneywash` (
 
 -- Dumping structure for table dep_keep.users
 CREATE TABLE IF NOT EXISTS `users` (
-  `identifier` varchar(40) NOT NULL,
+  `identifier` varchar(60) NOT NULL,
   `accounts` longtext DEFAULT NULL,
   `group` varchar(50) DEFAULT 'user',
   `inventory` longtext DEFAULT NULL,
@@ -358,7 +358,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 CREATE TABLE IF NOT EXISTS `user_licenses` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `type` varchar(60) NOT NULL,
-  `owner` varchar(40) NOT NULL,
+  `owner` varchar(60) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
