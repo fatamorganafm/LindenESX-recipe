@@ -1,7 +1,7 @@
 $engine: 3
 $onesync: on
 name: LindenESX
-version: 1.0.0
+version: 1.0.1
 author: Judd
 description: An ESX Legacy base that can be easily extended. 
 
@@ -52,7 +52,7 @@ tasks:
   - action: download_github
     src: https://github.com/nightowlsrp/ghmattimysql
     ref: 0ee7faedcd95583d7d9e9728489627323ef7a3f5
-    dest: ./resources/[essential]/mysql-async
+    dest: ./resources/[essential]/ghmattimysql
 
   - action: download_github
     src: https://github.com/esx-framework/cron
@@ -104,11 +104,16 @@ tasks:
     src: https://github.com/thelindat/esx_datastore
     ref: 5f5105d419d21aa6fcdc2b6aa2156d9c40e58d82
     dest: ./resources/[esx]/esx_datastore
-
+    
   - action: download_github
     src: https://github.com/thelindat/esx_identity
     ref: 911d17e27ebb1d260ffd27b7d53d2a265d7f1ce1
     dest: ./resources/[esx]/esx_identity
+
+  - action: download_github
+    src: https://github.com/thelindat/esx_multicharacter
+    ref: 11fa70ac545e688fff6684b2e046ae6cc0c64410
+    dest: ./resources/[esx]/esx_multicharacter
 
   - action: download_github
     src: https://github.com/thelindat/esx_skin
