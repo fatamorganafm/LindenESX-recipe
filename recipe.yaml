@@ -22,6 +22,10 @@ tasks:
   - action: move_path
     src: ./tmp/linden_esx/server.cfg
     dest: ./server.cfg
+    
+  - action: move_path
+    src: ./tmp/linden_esx/default_spawnpoint
+    dest: ./resources/default_spawnpoint
   
   - action: move_path
     src: ./tmp/linden_esx/loadingscreen
@@ -284,20 +288,3 @@ tasks:
   - action: remove_path
     path: ./tmp
     
-  # Replace all variables
-  - action: replace_string
-    file: ./resources/[esx]/es_extended/config.cfg
-    search: 'Config.Multichar = false'
-    replace: 'Config.Multichar = true'
-    search: 'Config.EnableDefaultInventory   = true'
-    replace: 'Config.EnableDefaultInventory   = false'
-  
-  - action: replace_string
-    file: ./resources/[esx]/esx_status/config.cfg
-    search: 'Config.Display        = true'
-    replace: 'Config.Display        = false'
-
-  - action: replace_string
-    file: ./resources/[esx]/esx_society/config.cfg
-    search: 'Config.EnableESXIdentity = false'
-    replace: 'Config.EnableESXIdentity = true'
