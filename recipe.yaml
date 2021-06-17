@@ -270,7 +270,7 @@ tasks:
   ## Cosmo HUD
   - action: download_github
     src: https://github.com/thelindat/cosmo_hud
-    ref: 50aacd7a18b5e9ac9f380c15227250d1e5bfdd0c
+    ref: 8febe033bcea3b43d3d358b53c056d8dea9330a5
     dest: ./resources/[elements]/cosmo_hud
     
     
@@ -283,3 +283,18 @@ tasks:
 ## Final touches
   - action: remove_path
     path: ./tmp
+    
+# Replace all variables
+- action: replace_string
+  file: ./resources/[esx]/es_extended/config.cfg
+  search: 'Config.Multichar = false'
+  replace: 'Config.Multichar = true'
+  search: 'Config.EnableDefaultInventory   = true'
+  replace: 'Config.EnableDefaultInventory   = false'
+  
+- action: replace_string
+  file: ./resources/[esx]/esx_status/config.cfg
+  search: 'Config.Display        = true'
+  replace: 'Config.Display        = false'
+  search: 'Config.EnableDefaultInventory   = true'
+  replace: 'Config.EnableDefaultInventory   = false'
