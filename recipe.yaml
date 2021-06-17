@@ -255,6 +255,11 @@ tasks:
     src: https://github.com/citizenfx/screenshot-basic
     ref: 0712d9ed5a0c6899db9bab37cd94f03310bb416c
     dest: ./resources/[essential]/screenshot-basic
+    
+  - action: download_github
+    src: https://github.com/FrazzIe/mumble-voip-fivem
+    ref: 7aa06f271459e7878714f3be39f49db6232a8455
+    dest: ./resources/[essential]/mumble-voip
 
 
   ## Cosmo HUD
