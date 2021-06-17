@@ -249,7 +249,7 @@ tasks:
     dest: ./tmp
   - action: move_path
     src: ./tmp/resources-1.2/gcphone
-    dest: ./resources/[essential]/gcphone
+    dest: ./resources/gcphone
   
   - action: download_github
     src: https://github.com/citizenfx/screenshot-basic
