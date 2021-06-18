@@ -107,7 +107,7 @@ tasks:
     
   - action: download_github
     src: https://github.com/thelindat/esx_identity
-    ref: 911d17e27ebb1d260ffd27b7d53d2a265d7f1ce1
+    ref: af88d9b519425df363d72cc2f15f80ea4b4d4f49
     dest: ./resources/[esx]/esx_identity
 
   - action: download_github
