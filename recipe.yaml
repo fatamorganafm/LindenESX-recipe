@@ -70,8 +70,8 @@ tasks:
     dest: ./resources/[essential]/skinchanger
 
   - action: download_github
-    src: https://github.com/VSSVSSN/srp-ipl-v2
-    ref: 97cb41e1de6baa8e4d3096ccf8c53786dc05e254
+    src: https://github.com/nightowlsrp/srp-ipl
+    ref: 04c00a1a53459480c228cdd4b9cd8f5954ad7688
     dest: ./resources/[essential]/srp-ipl
 
   - action: download_github
