@@ -252,7 +252,7 @@ tasks:
     
   - action: download_github
     src: https://github.com/nightowlsrp/default_spawnpoint
-    ref: 482bb76c81eec0c71e1caa93947bac764e783d4b
+    ref: 2812e5f68a9aeb3d20120b7a3fbc8e5d562f52bd
     dest: ./resources/[essential]/default_spawnpoint
 
   ## GCPhone stuff
