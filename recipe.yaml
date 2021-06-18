@@ -82,7 +82,7 @@ tasks:
   # Download ESX resources
   - action: download_github
     src: https://github.com/thelindat/es_extended
-    ref: d61901e69bf56e014540cc97e84bdf2abf04a491
+    ref: 941353ed3068c35cce02a18da6852d4e92c0ce8f
     dest: ./resources/[esx]/es_extended
 
   - action: download_github
