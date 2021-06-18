@@ -82,7 +82,7 @@ tasks:
   # Download ESX resources
   - action: download_github
     src: https://github.com/thelindat/es_extended
-    ref: 941353ed3068c35cce02a18da6852d4e92c0ce8f
+    ref: d209b0227b1e28299bfa243b2c5020d6ca58edbc
     dest: ./resources/[esx]/es_extended
 
   - action: download_github
@@ -111,9 +111,9 @@ tasks:
     dest: ./resources/[esx]/esx_identity
 
   - action: download_github
-    src: https://github.com/thelindat/esx_multicharacter
-    ref: 11fa70ac545e688fff6684b2e046ae6cc0c64410
-    dest: ./resources/[esx]/esx_multicharacter
+    src: https://github.com/PainedPsyche/cui_character
+    ref: c88427c65bc223ac24d5d8e864d35556a00335fd
+    dest: ./resources/[esx]/cui_character
 
   - action: download_github
     src: https://github.com/thelindat/esx_skin
