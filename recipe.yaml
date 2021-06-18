@@ -84,11 +84,6 @@ tasks:
     src: https://github.com/thelindat/es_extended
     ref: d61901e69bf56e014540cc97e84bdf2abf04a491
     dest: ./resources/[esx]/es_extended
-    
-  - action: replace_string
-    file: ./resources/[esx]/es_extended/config.lua
-    search: 'Config.EnableDefaultInventory   = true'
-    replace: 'Config.EnableDefaultInventory   = false'
 
   - action: download_github
     src: https://github.com/esx-framework/esx_menu_default
@@ -129,11 +124,6 @@ tasks:
     src: https://github.com/thelindat/esx_status
     ref: 25383caa0c0bbe7de823f17f419fbc9c98017044
     dest: ./resources/[esx]/esx_status
-    
-  - action: replace_string
-    file: ./resources/[esx]/esx_status/config.lua
-    search: 'Config.Display        = true'
-    replace: 'Config.Display        = false'
 
   - action: download_github
     src: https://github.com/thelindat/esx_basicneeds
@@ -159,11 +149,6 @@ tasks:
     src: https://github.com/thelindat/esx_society
     ref: 7c9818dbdc54a68412ae259d04f3524a08d9f123
     dest: ./resources/[esx]/esx_society
-    
-  - action: replace_string
-    file: ./resources/[esx]/esx_society/config.lua
-    search: 'Config.EnableESXIdentity = false'
-    replace: 'Config.EnableESXIdentity = true'
 
   - action: download_github
     src: https://github.com/esx-framework/esx_license
@@ -199,29 +184,11 @@ tasks:
     src: https://github.com/esx-framework/esx_policejob
     ref: 22cdd4ef2d7808ae8109d1e9f65a336300f2cad2
     dest: ./resources/[esx]/esx_policejob
-    
-  - action: replace_string
-    file: ./resources/[esx]/esx_policejob/config.lua
-    search: 'Config.EnablePlayerManagement     = false'
-    replace: 'Config.EnablePlayerManagement     = true'
-    search: 'Config.EnableArmoryManagement     = false'
-    replace: 'Config.EnableArmoryManagement     = true'
-    search: 'Config.EnableESXIdentity          = false'
-    replace: 'Config.EnableESXIdentity          = true'
-    search: 'Config.EnableLicenses             = false'
-    replace: 'Config.EnableLicenses             = true'
-    search: 'Config.EnableESXService           = false'
-    replace: 'Config.EnableESXService           = true'
 
   - action: download_github
     src: https://github.com/esx-framework/esx_ambulancejob
     ref: ba0961095c8a31f1d993c2c13f913dbb37bf52bf
     dest: ./resources/[esx]/esx_ambulancejob
-    
-  - action: replace_string
-    file: ./resources/[esx]/esx_ambulancejob/config.lua
-    search: 'Config.EnablePlayerManagement     = false'
-    replace: 'Config.EnablePlayerManagement     = true'
 
   - action: download_github
     src: https://github.com/esx-framework/esx_mechanicjob
@@ -314,11 +281,6 @@ tasks:
     src: https://github.com/thelindat/cosmo_hud
     ref: 8febe033bcea3b43d3d358b53c056d8dea9330a5
     dest: ./resources/[elements]/cosmo_hud
-    
-  - action: replace_string
-    file: ./resources/[elements]/cosmo_hud/config.cfg
-    search: 'Config.UseRadio = true'
-    replace: 'Config.UseRadio = false'
     
   ## Linden Inventory
   - action: download_github
