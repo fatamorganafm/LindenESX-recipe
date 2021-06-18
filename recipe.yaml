@@ -86,7 +86,7 @@ tasks:
     dest: ./resources/[esx]/es_extended
     
   - action: replace_string
-    file: ./resources/[esx]/es_extended/config.cfg
+    file: ./resources/[esx]/es_extended/config.lua
     search: 'Config.EnableDefaultInventory   = true'
     replace: 'Config.EnableDefaultInventory   = false'
 
@@ -131,7 +131,7 @@ tasks:
     dest: ./resources/[esx]/esx_status
     
   - action: replace_string
-    file: ./resources/[esx]/esx_status/config.cfg
+    file: ./resources/[esx]/esx_status/config.lua
     search: 'Config.Display        = true'
     replace: 'Config.Display        = false'
 
@@ -161,7 +161,7 @@ tasks:
     dest: ./resources/[esx]/esx_society
     
   - action: replace_string
-    file: ./resources/[esx]/esx_society/config.cfg
+    file: ./resources/[esx]/esx_society/config.lua
     search: 'Config.EnableESXIdentity = false'
     replace: 'Config.EnableESXIdentity = true'
 
