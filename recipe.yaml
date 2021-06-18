@@ -1,7 +1,7 @@
 $engine: 3
 $onesync: on
 name: LindenESX
-version: 1.0.2
+version: 1.0.5
 author: Judd
 description: An ESX Legacy base that can be easily extended. 
 
@@ -285,7 +285,7 @@ tasks:
   ## Linden Inventory
   - action: download_github
     src: https://github.com/thelindat/linden_inventory
-    ref: ebb22797b0b2ae299f73886e6c4a5814b10af8d7
+    ref: 09c75000f9e7dfc39519c2f49b045e444f777605
     dest: ./resources/[essential]/linden_inventory
 
   ## Final touches
