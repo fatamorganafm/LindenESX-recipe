@@ -199,11 +199,29 @@ tasks:
     src: https://github.com/esx-framework/esx_policejob
     ref: 22cdd4ef2d7808ae8109d1e9f65a336300f2cad2
     dest: ./resources/[esx]/esx_policejob
+    
+  - action: replace_string
+    file: ./resources/[esx]/esx_policejob/config.lua
+    search: 'Config.EnablePlayerManagement     = false'
+    replace: 'Config.EnablePlayerManagement     = true'
+    search: 'Config.EnableArmoryManagement     = false'
+    replace: 'Config.EnableArmoryManagement     = true'
+    search: 'Config.EnableESXIdentity          = false'
+    replace: 'Config.EnableESXIdentity          = true'
+    search: 'Config.EnableLicenses             = false'
+    replace: 'Config.EnableLicenses             = true'
+    search: 'Config.EnableESXService           = false'
+    replace: 'Config.EnableESXService           = true'
 
   - action: download_github
     src: https://github.com/esx-framework/esx_ambulancejob
     ref: ba0961095c8a31f1d993c2c13f913dbb37bf52bf
     dest: ./resources/[esx]/esx_ambulancejob
+    
+  - action: replace_string
+    file: ./resources/[esx]/esx_ambulancejob/config.lua
+    search: 'Config.EnablePlayerManagement     = false'
+    replace: 'Config.EnablePlayerManagement     = true'
 
   - action: download_github
     src: https://github.com/esx-framework/esx_mechanicjob
@@ -291,13 +309,16 @@ tasks:
     ref: 7aa06f271459e7878714f3be39f49db6232a8455
     dest: ./resources/[essential]/mumble-voip
 
-
   ## Cosmo HUD
   - action: download_github
     src: https://github.com/thelindat/cosmo_hud
     ref: 8febe033bcea3b43d3d358b53c056d8dea9330a5
     dest: ./resources/[elements]/cosmo_hud
     
+  - action: replace_string
+    file: ./resources/[elements]/cosmo_hud/config.cfg
+    search: 'Config.UseRadio = true'
+    replace: 'Config.UseRadio = false'
     
   ## Linden Inventory
   - action: download_github
