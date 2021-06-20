@@ -82,7 +82,7 @@ tasks:
   # Download ESX resources
   - action: download_github
     src: https://github.com/thelindat/es_extended
-    ref: d209b0227b1e28299bfa243b2c5020d6ca58edbc
+    ref: 941353ed3068c35cce02a18da6852d4e92c0ce8f
     dest: ./resources/[esx]/es_extended
 
   - action: download_github
@@ -111,9 +111,14 @@ tasks:
     dest: ./resources/[esx]/esx_identity
 
   - action: download_github
-    src: https://github.com/PainedPsyche/cui_character
-    ref: c88427c65bc223ac24d5d8e864d35556a00335fd
-    dest: ./resources/[esx]/cui_character
+    src: https://github.com/thelindat/esx_multicharacter
+    ref: aa6228c1bf4ed6df1dd4e52111e43d06115085c4
+    dest: ./resources/[esx]/esx_multicharacter
+    
+  - action: replace_string
+    file: ./resources/[esx]/esx_multicharacter/server/main.lua
+    search: 'replace_this'
+    replace: '{{dbName}}'
 
   - action: download_github
     src: https://github.com/thelindat/esx_skin
