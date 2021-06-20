@@ -256,9 +256,9 @@ tasks:
     dest: ./resources/[essential]/LegacyFuel
     
   - action: download_github
-    src: https://github.com/zentroxx/sharp-spawnselect
-    ref: c33d4a8ef028db5d07f11d5441fee02f4a71624d
-    dest: ./resources/[essential]/sharp-spawnselect
+    src: https://github.com/citizenfx/screenshot-basic
+    ref: 0712d9ed5a0c6899db9bab37cd94f03310bb416c
+    dest: ./resources/[essential]/screenshot-basic
 
   ## GCPhone stuff
   - action: download_file
