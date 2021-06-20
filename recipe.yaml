@@ -1,7 +1,7 @@
 $engine: 3
 $onesync: on
 name: LindenESX
-version: 1.0.9
+version: 1.1.0
 author: Judd
 description: An ESX Legacy base that can be easily extended. 
 
@@ -107,7 +107,7 @@ tasks:
     
   - action: download_github
     src: https://github.com/thelindat/esx_identity
-    ref: af88d9b519425df363d72cc2f15f80ea4b4d4f49
+    ref: 911d17e27ebb1d260ffd27b7d53d2a265d7f1ce1
     dest: ./resources/[esx]/esx_identity
 
   - action: download_github
@@ -279,7 +279,7 @@ tasks:
   ## Cosmo HUD
   - action: download_github
     src: https://github.com/thelindat/cosmo_hud
-    ref: 8febe033bcea3b43d3d358b53c056d8dea9330a5
+    ref: 50aacd7a18b5e9ac9f380c15227250d1e5bfdd0c
     dest: ./resources/[elements]/cosmo_hud
     
   ## Linden Inventory
