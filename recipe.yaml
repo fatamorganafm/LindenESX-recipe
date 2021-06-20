@@ -1,7 +1,7 @@
 $engine: 3
 $onesync: on
 name: LindenESX
-version: 1.0.5
+version: 1.0.9
 author: Judd
 description: An ESX Legacy base that can be easily extended. 
 
