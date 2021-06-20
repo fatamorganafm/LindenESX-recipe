@@ -7,7 +7,7 @@ This recipe runs inside [**txAdmin**](https://github.com/tabarra/txAdmin).
 Please check the [**Recipe Documentation Page**](https://github.com/tabarra/txAdmin/blob/master/docs/recipe.md).
 
 ## If you don't read this, don't complain about things not working.
-After initial setup and server start, shut the server down **(do not try and join server yet)** do he following edits:
+After initial setup and server start, shut the server down **(do not try and join server yet)** do the following edits:
 [esx]\es_extended\config.lua
 Set **Config.Multichar = true**
 
