@@ -287,6 +287,12 @@ tasks:
     src: https://github.com/thelindat/linden_inventory
     ref: 85ea22686a894f2421ebb4656ed2b0ad49121e67
     dest: ./resources/[essential]/linden_inventory
+    
+   ## Linden Inventory
+  - action: download_github
+    src: https://github.com/thelindat/linden_vending
+    ref: 61d9aa464cc74a6a5a248139579a310d8d832375
+    dest: ./resources/[essential]/linden_vending
 
   ## Final touches
   - action: remove_path
