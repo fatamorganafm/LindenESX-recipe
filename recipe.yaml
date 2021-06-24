@@ -101,8 +101,8 @@ tasks:
     dest: ./resources/[esx]/esx_menu_list
 
   - action: download_github
-    src: https://github.com/thelindat/esx_datastore
-    ref: 5f5105d419d21aa6fcdc2b6aa2156d9c40e58d82
+    src: https://github.com/esx-framework/esx_datastore
+    ref: dfe0321bdd7ba35b6ec3316529c220b827816997
     dest: ./resources/[esx]/esx_datastore
     
   - action: download_github
