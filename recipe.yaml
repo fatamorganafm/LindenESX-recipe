@@ -101,8 +101,8 @@ tasks:
     dest: ./resources/[esx]/esx_menu_list
 
   - action: download_github
-    src: https://github.com/esx-framework/esx_datastore
-    ref: dfe0321bdd7ba35b6ec3316529c220b827816997
+    src: https://github.com/dunak-debug/esx_datastore
+    ref: e0545ef7aa48bc49057d3450f5615f6a18650382
     dest: ./resources/[esx]/esx_datastore
     
   - action: download_github
