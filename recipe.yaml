@@ -111,13 +111,13 @@ tasks:
     dest: ./resources/[esx]/esx_identity
 
   - action: download_github
-    src: https://github.com/nightowlsrp/esx_multicharacter
-    ref: cdb3c7229a72bf68d77104ccf32bbc852ee378a6
+    src: https://github.com/thelindat/esx_multicharacter
+    ref: master
     dest: ./resources/[esx]/esx_multicharacter
     
   - action: replace_string
     file: ./resources/[esx]/esx_multicharacter/server/main.lua
-    search: 'replace_this'
+    search: 'es_extended'
     replace: '{{dbName}}'
 
   - action: download_github
