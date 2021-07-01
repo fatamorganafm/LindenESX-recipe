@@ -284,7 +284,7 @@ tasks:
   ## Cosmo HUD
   - action: download_github
     src: https://github.com/thelindat/cosmo_hud
-    ref: eed8fd7b8cbe8a02ae7339d4dee05b5d56a8097c
+    ref: f6263ccd3e447a6d3bede573dc9d885d53bbab2c
     dest: ./resources/[elements]/cosmo_hud
     
   ## Linden Inventory
