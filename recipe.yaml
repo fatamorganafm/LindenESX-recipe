@@ -40,8 +40,8 @@ tasks:
     dest: ./resources/[admin]/EasyAdmin
 
   - action: download_github
-    src: https://github.com/esx-framework/async
-    ref: e7b778f0c7236132596e98d8ebd33e1127dbb4c4
+    src: https://github.com/iSAlexHere/async
+    ref: 3cf91afe62bcebda3bfeee67c66ba4c59918108d
     dest: ./resources/[essential]/async
 
   - action: download_github
