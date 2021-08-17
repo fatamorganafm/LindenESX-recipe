@@ -60,13 +60,11 @@ tasks:
     dest: ./resources/[essential]/cron
 
   - action: download_github
-    src: https://github.com/esx-framework/esx-legacy
-    subpath: [esx_addons]/instance
+    src: https://github.com/fatamorganafm/instance
     dest: ./resources/[essential]/instance
 
   - action: download_github
-    src: https://github.com/esx-framework/esx-legacy
-    subpath: [esx]/skinchanger
+    src: https://github.com/fatamorganafm/skinchanger
     dest: ./resources/[essential]/skinchanger
 
   - action: download_github
@@ -86,18 +84,15 @@ tasks:
     dest: ./resources/[esx]/es_extended
 
   - action: download_github
-    src: https://github.com/esx-framework/esx-legacy
-    subpath: [esx]/esx_menu_default
+    src: https://github.com/fatamorganafm/esx_menu_default
     dest: ./resources/[esx]/esx_menu_default
 
   - action: download_github
-    src: https://github.com/esx-framework/esx-legacy
-    subpath: [esx]/esx_menu_dialog
+    src: https://github.com/fatamorganafm/esx_menu_dialog
     dest: ./resources/[esx]/esx_menu_dialog
 
   - action: download_github
-    src: https://github.com/esx-framework/esx-legacy
-    subpath: [esx]/esx_menu_list
+    src: https://github.com/fatamorganafm/esx_menu_list
     dest: ./resources/[esx]/esx_menu_list
 
   - action: download_github
@@ -141,13 +136,11 @@ tasks:
     dest: ./resources/[esx]/esx_billing
 
   - action: download_github
-    src: https://github.com/esx-framework/esx-legacy
-    subpath: [esx_addons]/esx_addoninventory
+    src: https://github.com/fatamorganafm/esx_addoninventory
     dest: ./resources/[esx]/esx_addoninventory
 
   - action: download_github
-    src: https://github.com/esx-framework/esx-legacy
-    subpath: [esx_addons]/esx_addonaccount
+    src: https://github.com/fatamorganafm/esx_addonaccount
     dest: ./resources/[esx]/esx_addonaccount
 
   - action: download_github
@@ -156,83 +149,67 @@ tasks:
     dest: ./resources/[esx]/esx_society
 
   - action: download_github
-    src: https://github.com/esx-framework/esx-legacy
-    subpath: [esx_addons]/esx_license
+    src: https://github.com/fatamorganafm/esx_license
     dest: ./resources/[esx]/esx_license
 
   - action: download_github
-    src: https://github.com/esx-framework/esx-legacy
-    subpath: [esx_addons]/esx_service
+    src: https://github.com/fatamorganafm/esx_service
     dest: ./resources/[esx]/esx_service
 
   - action: download_github
-    src: https://github.com/esx-framework/esx-legacy
-    subpath: [esx_addons]/esx_garage
+    src: https://github.com/fatamorganafm/esx_garage
     dest: ./resources/[esx]/esx_garage
 
   - action: download_github
-    src: https://github.com/esx-framework/esx-legacy
-    subpath: [esx_addons]/esx_vehicleshop
+    src: https://github.com/fatamorganafm/esx_vehicleshop
     dest: ./resources/[esx]/esx_vehicleshop
 
   - action: download_github
-    src: https://github.com/esx-framework/esx-legacy
-    subpath: [esx_addons]/esx_jobs
+    src: https://github.com/fatamorganafm/esx_jobs
     dest: ./resources/[esx]/esx_jobs
 
   - action: download_github
-    src: https://github.com/esx-framework/esx-legacy
-    subpath: [esx_addons]/esx_joblisting
+    src: https://github.com/fatamorganafm/esx_joblisting
     dest: ./resources/[esx]/esx_joblisting
 
   - action: download_github
-    src: https://github.com/esx-framework/esx-legacy
-    subpath: [esx_addons]/esx_policejob
+    src: https://github.com/fatamorganafm/esx_policejob
     dest: ./resources/[esx]/esx_policejob
 
   - action: download_github
-    src: https://github.com/esx-framework/esx-legacy
-    subpath: [esx_addons]/esx_ambulancejob
+    src: https://github.com/fatamorganafm/esx_ambulancejob
     dest: ./resources/[esx]/esx_ambulancejob
 
   - action: download_github
-    src: https://github.com/esx-framework/esx-legacy
-    subpath: [esx_addons]/esx_mechanicjob
+    src: https://github.com/fatamorganafm/esx_mechanicjob
     dest: ./resources/[esx]/esx_mechanicjob
 
   - action: download_github
-    src: https://github.com/esx-framework/esx-legacy
-    subpath: [esx_addons]/esx_taxijob
+    src: https://github.com/fatamorganafm/esx_taxijob
     dest: ./resources/[esx]/esx_taxijob
 
   - action: download_github
-    src: https://github.com/esx-framework/esx-legacy
-    subpath: [esx_addons]/esx_lscustom
+    src: https://github.com/fatamorganafm/esx_lscustom
     dest: ./resources/[esx]/esx_lscustom
 
   - action: download_github
-    src: https://github.com/esx-framework/esx-legacy
-    subpath: [esx_addons]/esx_atm
+    src: https://github.com/fatamorganafm/esx_atm
     dest: ./resources/[esx]/esx_atm 
 
   - action: download_github
-    src: https://github.com/esx-framework/esx-legacy
-    subpath: [esx_addons]/esx_clotheshop
+    src: https://github.com/fatamorganafm/esx_clotheshop
     dest: ./resources/[esx]/esx_clotheshop
 
   - action: download_github
-    src: https://github.com/esx-framework/esx-legacy
-    subpath: [esx_addons]/esx_barbershop
+    src: https://github.com/fatamorganafm/esx_barbershop
     dest: ./resources/[esx]/esx_barbershop
 
   - action: download_github
-    src: https://github.com/esx-framework/esx-legacy
-    subpath: [esx_addons]/esx_drugs
+    src: https://github.com/fatamorganafm/esx_drugs
     dest: ./resources/[esx]/esx_drugs
 
   - action: download_github
-    src: https://github.com/esx-framework/esx-legacy
-    subpath: [esx_addons]/esx_holdup
+    src: https://github.com/fatamorganafm/esx_holdup
     dest: ./resources/[esx]/esx_holdup
     
   - action: download_github
@@ -246,8 +223,7 @@ tasks:
     dest: ./resources/[elements]/mythic_progbar
     
   - action: download_github
-    src: https://github.com/brentN5/bt-target
-    subpath: bt-target
+    src: https://github.com/brentN5/bt-target/tree/main/bt-target
     dest: ./resources/[elements]/bt-target
     
   - action: download_github
