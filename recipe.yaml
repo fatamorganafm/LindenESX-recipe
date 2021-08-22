@@ -241,7 +241,7 @@ tasks:
 
   ## GCPhone stuff
   - action: download_github
-    url: https://github.com/fatamorganafm/gcphone
+    src: https://github.com/fatamorganafm/gcphone
     dest: ./resources/[essential]/gcphone
     
   - action: download_github
