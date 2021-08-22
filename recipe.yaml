@@ -15,7 +15,7 @@ tasks:
   
   # Download and prepare server.cfg / loadingscreen / database
   - action: download_github
-    src: https://github.com/nightowlsrp/LindenESX-recipe
+    src: https://github.com/fatamorganafm/LindenESX-recipe
     ref: main
     dest: ./tmp/linden_esx
 
