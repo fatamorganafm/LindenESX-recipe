@@ -50,8 +50,7 @@ tasks:
     dest: ./resources/[essential]/mysql-async
     
   - action: download_github
-    src: https://github.com/nightowlsrp/ghmattimysql
-    ref: 0ee7faedcd95583d7d9e9728489627323ef7a3f5
+    src: https://github.com/fatamorganafm/ghmattimysql
     dest: ./resources/[essential]/ghmattimysql
 
   - action: download_github
@@ -68,8 +67,7 @@ tasks:
     dest: ./resources/[essential]/skinchanger
 
   - action: download_github
-    src: https://github.com/nightowlsrp/srp-ipl
-    ref: 04c00a1a53459480c228cdd4b9cd8f5954ad7688
+    src: https://github.com/fatamorganafm/srp-ipl
     dest: ./resources/[essential]/srp-ipl
 
   - action: download_github
@@ -243,13 +241,7 @@ tasks:
 
   ## GCPhone stuff
   - action: download_file
-    url: https://github.com/nightowlsrp/Re-Ignited-Phone/releases/download/1.0/gcphone.zip
-    path: ./tmp/gcphone.zip
-  - action: unzip
-    src: ./tmp/gcphone.zip
-    dest: ./tmp
-  - action: move_path
-    src: ./tmp/gcphone
+    url: https://github.com/fatamorganafm/gcphone
     dest: ./resources/[essential]/gcphone
     
   - action: download_github
