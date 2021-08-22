@@ -240,7 +240,7 @@ tasks:
     dest: ./resources/[essential]/screenshot-basic
 
   ## GCPhone stuff
-  - action: download_file
+  - action: download_github
     url: https://github.com/fatamorganafm/gcphone
     dest: ./resources/[essential]/gcphone
     
